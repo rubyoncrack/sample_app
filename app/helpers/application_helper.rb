@@ -12,4 +12,10 @@ module ApplicationHelper
   end
   
   
+  
+  def logo
+    image_tag('rails.png', :alt => 'row27 rocks', :class => 'round')
+  end
+  
+  
 end

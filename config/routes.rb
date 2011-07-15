@@ -1,6 +1,8 @@
 SampleApp::Application.routes.draw do
+  # this makes /users/1 work ... magic!
+  resources :users
+  
 
-  get "users/new"
 
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
